@@ -1,0 +1,74 @@
+.main{
+  background-color: yellow;
+}
+.heading{
+  padding: 20px;
+}
+.input{
+  margin: 10px;
+}
+.bg{
+  background-color: #fefce0;
+}
+.b1{
+  background-color: #73fd81;
+  padding: 15px;
+  border-radius: 5px;
+  margin-right: 2%;
+  font-weight: bold;
+}
+.b2{
+  background-color: #73fd81;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 3%;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.b1:hover,.b2:hover,.submit:hover,.next:hover,.reset:hover{
+  box-shadow: 2px 3px #686d6e;
+}
+.submit,.next,.reset{
+  padding: 1.5% 2.5% 1.5% 2.5%;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #73fd81;
+}
+.reset{
+  background-color: #EB1D36;
+}
+.div{
+  text-align: center;
+  margin-top: 10%;
+  margin-right: 5%;
+  margin-left: 50%
+}
+#login_submit{
+  position: relative;
+  right: 17px;
+}
+#login_reset{
+  position: relative;
+  left: 17px;
+}
+.bank_title{
+  color: #b70f0a;
+  font-family: 'Audiowide', cursive;
+  font-size: 4rem;
+}
+.description{
+  padding: 20px 15%;
+  width: 70%;
+}
+.date1{
+  padding: 4px 28px 4px 28px;
+  border-radius: 4px;
+}
+.boxa{
+  padding: 1% 0.5% 1% 0.5%;
+  border-radius: 4px;
+}
+.reset a{
+  color: black;
+  text-decoration: none;
+}

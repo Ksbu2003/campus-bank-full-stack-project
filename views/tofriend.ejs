@@ -1,0 +1,28 @@
+<%- include("header.ejs") -%>
+
+
+<%= console.log(frnd); %>
+
+<% frnd.forEach(function(frand){ %>
+  <div class="wrapper">
+    <div class="for_admno">
+      <span><%= frand.admission_number %></span>
+    </div>
+    <div class="for_name">
+      <span><%= frand.Name %></span>
+    </div>
+    <div class="for_btn">
+
+    <%  var x = frand.admission_number %>
+      <form action="/pvttf.html" method="post">
+        <button type="submit" name="sbmt" value="<%= x %>">Send</button>
+      </form>
+    </div>
+  </div>
+
+
+
+<% }); %>
+
+
+<%- include("footer.ejs") -%>

@@ -1,0 +1,65 @@
+<%- include("header.ejs") -%>
+
+
+    <button class="btn btn-menu " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   <div class="list-group">
+  <a href="amounttoaccount.html" class="list-group-item list-group-item-action ">
+    Transfer to Account
+  </a>
+  <a href="amount.html" class="list-group-item list-group-item-action">
+      Transfer to Friend
+      </a>
+  <a href="addfriend.html" class="list-group-item list-group-item-action">
+      Add Friend
+  </a>
+  <a href="removefriend.html" class="list-group-item list-group-item-action">
+      Remove Friend
+  </a>
+  <a href="checkpin.html" class="list-group-item list-group-item-action">
+      History
+  </a>
+  <a href="viewbalanceotp.html" class="list-group-item list-group-item-action">
+      View Balance
+  </a>
+  <a href="editdetails.html" class="list-group-item list-group-item-action">
+      Edit Details
+  </a>
+  <a href="changepassword1" class="list-group-item list-group-item-action">
+      Change Password
+  </a>
+  <a href="setuppin1" class="list-group-item list-group-item-action">
+      Set New PIN
+  </a>
+  <form action="/logout" method="post">
+    <button type="submit" action="/logout" class="btn btn-light shadow p-3 mb-5  rounded linkr">
+      Logout
+    </button>
+  </form>
+</div>
+
+  </div>
+</div>
+
+
+<div class="image-card" style="width:150px;">
+  <img src="/images/index.png  " class="card-img-top">
+</div>
+
+<div class="card details-card" style="width: 60%;">
+  <div class="card-body">
+    <h3>Name : <%= dname %> </h3>
+    <br />
+    <h3>Admno : <%= dadmin %> </h3>
+    <br />
+    <h3>Date of Birth : <%= ddob %> </h3>
+    <br />
+    <h3>City : <%= dcity %> </h3>
+  </div>
+</div>
+<%- include("footer.ejs") -%>

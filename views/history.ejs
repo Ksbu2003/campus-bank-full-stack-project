@@ -1,0 +1,37 @@
+<%- include("header.ejs") -%>
+<div class="wrapper">
+  <div class="for_admno">
+    <b>Admission Number</b>
+  </div>
+  <div class="for_name">
+     <b>Amount</b>
+  </div>
+  <div class="for_btn">
+    <b>Transaction Id</b>
+    </div>
+</div>
+
+<%= console.log(hist); %>
+<% hist.forEach(function(history){ %>
+  <div class="wrapper">
+    <div class="for_admno">
+      <span><%= history.to_account %></span>
+    </div>
+    <div class="for_name">
+      <span><%= history.Amount %></span>
+    </div>
+    <div class="for_btn">
+       <span><%= history._id %></span>
+    </div>
+  </div>
+
+
+
+<% }); %>
+<div class="wrapper">
+  <form action="hist" method="post">
+    <button class="btn btn-success" type="submit">Go to dashboard</button>
+  </form>
+</div>
+
+<%- include("footer.ejs") -%>
